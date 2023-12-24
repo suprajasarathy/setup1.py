@@ -1,0 +1,25 @@
+import argparse
+
+def process_urls(input_file, output_file):
+    unique_endpoints = set()
+
+    with open(input_file, 'r') as infile:
+        for line in infile:
+            url = line.strip()
+            parts = url.split('/')
+            for i in range(3, len(parts) + 1):
+                endpoint = '/'.join(parts[:i])
+                unique_endpoints.add(endpoint)
+
+    with open(output_file, 'w') as outfile:
+        for endpoint in sorted(unique_endpoints):
+            print(endpoint)
+            outfile.write(endpoint + '\n')
+
+if _name_ == "_main_":
+    parser = argparse.ArgumentParser(description="Process URLs from input file and generate output file with endpoints.")
+    parser.add_argument("-list", dest="input_file", help="Input file containing URLs", required=True)
+    parser.add_argument("-o", dest="output_file", help="Output file to store processed URLs", required=True)
+    args = parser.parse_args()
+
+    process_urls(args.input_file, args.output_file
