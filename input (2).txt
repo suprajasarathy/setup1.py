@@ -1,0 +1,17 @@
+https://example.com/page1
+https://example.com/page2
+https://example.com/page3
+https://example.com/path1/subpage1
+https://example.com/path1/subpage2
+https://example.com/path2/subpage1
+https://example.com/path2/subpage2
+https://example.com/path3/subpage1
+https://example.com/path3/subpage2
+https://example.com/assets/css/style.css
+https://example.com/assets/js/script.js
+https://example.com/images/image1.jpg
+https://example.com/images/image2.jpg
+https://example.com/api/v1/resource1
+https://example.com/api/v1/resource2
+https://example.com/api/v2/resource1
+https://example.com/api/v2/resource2
